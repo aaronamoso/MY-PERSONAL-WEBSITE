@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Amoso</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fceeca1845.js" crossorigin="anonymous"></script>
+
+<!-------------------- cheat sheets --------------->
+<link rel="stylesheet" href="cheatSheet.css">
+<link rel="stylesheet" href="cheatSheet.html">
+<link rel="stylesheet" href="cheatSheet.js">
+<!--------------------------------------------------->
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">AARON</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fa-sharp" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>I'm <span>Aaron Amoso</span><br>Let's connect!</h1>
+        </div>
+    </div>
+</div>
+
+<!-------------------- about me section --------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="images/IMG_6629.jpg">
+            </div>
+            <div class="about-column-2">
+                <h1 class="sub-ttitle">About Me</h1><br><br>
+                <p class="p">I currently reside in Calgary, Alberta and a student at Bow Valley College for Software Development with a passion in pursuing as a Blockchain Developer in my future career. </p><br>
+                
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p> <!--onclick helps with hiding contents-->
+                    <p class="tab-links onclick=" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links onclick=" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills"> <!--Skills -->
+                    <ul>
+                        <li><span>Content Creator</span><br>Social Media: Instagram, TikTok, Pinterest</li>
+                        <li><span>Web Development</span><br>Web design with HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience"> <!--Experience -->
+                    <ul>
+                        <li><span>2022 - 2023</span><br>Educator, lululemon</li>
+                        <li><span>2020 - 2022</span><br>Business Owner, The Hidden Aroid</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education"> <!--Education -->
+                    <ul>
+                        <li><span>2023 - Present</span><br>Software Development at <b><i>Bow Valley College</i></b></li>
+                        <li><span>2022 - Present</span><br>Full-Stack Web Development at <b><i>Udemy</i></b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------RESUME---------------->
+<div class="resume">
+    <h2>Click below to view my resume:</h2> <br>
+    <a href="resume.html"><h4>AARON AMOSO RESUME</h4></a>
+</div>
+   <!-------------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-regular fa-paper-plane"></i>amosoaaron@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>5878303781</p>
+                <div class="social-icons"> <!--use font awesome to find social media icons-->
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aaron-amoso-002550231/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aaronamoso"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/RESUME.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Aaron Amoso, 2023.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link"); //this makes the link like response to clicks-->
+    //problem encountered here where I have to keep refreshing the webpage in order for the link like to respond.
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // -----------------contact----------------
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu () {
+        sidemenu.style.right = "0";
+    }
+    function closemenu () {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+<script scr="script.js"></script>
+</html>

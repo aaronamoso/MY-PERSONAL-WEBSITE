@@ -1,0 +1,22 @@
+body {
+    width: 100%;
+    background: black;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 213, 0);
+}
+.basic {
+    text-align: center;
+}
+.contents {
+    margin: 0 25%;
+}
+img {
+    width: 10%;
+    border-radius: 25px;
+}
+h2, h4 {
+    color:rgb(255, 213, 0);
+}

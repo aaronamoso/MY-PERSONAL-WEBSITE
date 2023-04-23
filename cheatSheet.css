@@ -1,0 +1,54 @@
+/* targeting children in specific divs is difficult but was doable */
+/* I learned that you can link images through CSS. using url();
+cant decide on colors
+flex-wrap: wrap; helped with images and contents separate and not overlap to one another
+display: none; also helped with hiding contents before hovered or clicked
+:: pseudo element helped with before and after a button is hovered :-moz-drag-over
+justify-content: space-between; helps with distributing spaces between and around content items
+border-radius helped with smoothing out the edges of an image as seen on my about section
+transform: translateY(-5px); cool trick to make the logos jump when hovered */
+/* changing icon colours similar to the distinct and eye catching yellow colour adds aesthetic
+transition: right 0.5s; add timedelay to make it smoother */
+/* cursor: pointer; helps the user figure out which is clickable and not by changing the cursor to pointer.
+black and yellow adds elegant touch and readability.
+flex -- helps so much with organizing contents in a much more easier way compared to doing positioning
+.social-icons a:hover {
+    color:rgb(217, 255, 0);
+    transform: translateY(-5px); /* cool trick to make the logos jump when hovered */
+/* } // this makes the icon jump when the cursor is hovered over */ 
+/* @media only screen and (max-width: 600px){
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-sharp {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: rgb(255, 213, 0);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s; /*add timedelay to make it smoother*/
+    /* }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-sharp {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer; */
+    /* } the following set of code is pretty much how it becomes readable the webpage is when the screen size is changed.  */
+/* 
+    RESUME CHEAT SHEET
+    This one was pretty easy, I used tables to make sure the dates isnt placed near the titles. */
